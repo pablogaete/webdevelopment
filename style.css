@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: block;
+    width: 100%;
+    background-color: rgba(100,100,100,0.5);
+    color white;
+    position: absolute;
+    z-index: 100;
+}
+
+nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+    float: left;
+    font-size: 16px;
+}
+ 
+nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #6e32aa;
+}
+
+main#content {
+    display: block;
+    color: white;
+    text-align: center;
+    background-image: url("/../D:/Imágenes/Wallpapers/Backgrounds/face_headphones_art_131678_1920x1080.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main#content div.btn {
+    display: inline-block;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #3ddbf3;
+    color: white;
+}
+main#content div.btn:hover,
+main#content div.btn:focus,
+main#content div.btn:active {
+    background-color: #ed1dce;
+}
+
+main#content div.btn:focus {
+    background-color: red;
+}
+main#content h1 {
+    font-size: 3em;
+    padding-top: 50vh;
+    text-shadow: 0 2px 4px #000;
+    margin: 0;
+}
